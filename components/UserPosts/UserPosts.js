@@ -10,6 +10,7 @@ import {
   faComment,
 } from '@fortawesome/free-regular-svg-icons';
 import styles from './style';
+import {horizontalScale} from '../../assets/styles/scalling';
 
 const UserPosts = props => {
   return (
@@ -18,7 +19,7 @@ const UserPosts = props => {
         <View style={styles.userContainer}>
           <UserProfileImage
             profileImage={props.profileImage}
-            imageDimensions={48}
+            imageDimensions={horizontalScale(48)}
           />
           <View style={styles.userTextContainer}>
             <Text style={styles.userName}>

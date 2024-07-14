@@ -1,11 +1,12 @@
 import {StyleSheet} from 'react-native';
+import {horizontalScale} from '../../assets/styles/scalling';
 
 const styles = StyleSheet.create({
   imageContainer: {
     borderWidth: 1,
     borderColor: '#F35BAC',
     borderRadius: 50,
-    padding: 3,
+    padding: horizontalScale(3),
   },
 });
 
